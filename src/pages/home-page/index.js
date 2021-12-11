@@ -5,12 +5,14 @@ import Banner from '../../assets/components/home-page/banner/index.js';
 import Experiences from '../../assets/components/home-page/experiences/index.js';
 import ShareExperience from '../../assets/components/home-page/share-experience/index.js';
 import Footer from '../../assets/components/home-page/footer/index.js';
+import Testimonial from '../../assets/components/home-page/testimonial/index.js';
 export default function HomePage() {
   return (
     <>
       <Header />
       <Banner />
       <Experiences/>
+      <Testimonial/>
       <ShareExperience/>
       <Footer/>
     </>
