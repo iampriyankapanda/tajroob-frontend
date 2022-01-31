@@ -43,10 +43,10 @@ export default function Testimonial() {
                   </div>
                   <div>
                     <h5 className="testimonial-wrapper__testimonial-profile-name">
-                      Tamela Mann
+                      Mohammed Al Rawi
                     </h5>
                     <p className="testimonial-wrapper__testimonial-profile-designation">
-                      Chef
+                      Middle East Business Consultant
                     </p>
                   </div>
                 </div>
@@ -61,10 +61,10 @@ export default function Testimonial() {
                   </div>
                   <div>
                     <h5 className="testimonial-wrapper__testimonial-profile-name">
-                      Tamela Mann
+                      Karen Clark Sheard
                     </h5>
                     <p className="testimonial-wrapper__testimonial-profile-designation">
-                      Chef
+                      Dancer
                     </p>
                   </div>
                 </div>
@@ -79,10 +79,10 @@ export default function Testimonial() {
                   </div>
                   <div>
                     <h5 className="testimonial-wrapper__testimonial-profile-name">
-                      Tamela Mann
+                      Laura Campbell
                     </h5>
                     <p className="testimonial-wrapper__testimonial-profile-designation">
-                      Chef
+                      Traveller, Vietnam
                     </p>
                   </div>
                 </div>
@@ -109,32 +109,27 @@ export default function Testimonial() {
           </div>
           <div className="testimonial-wrapper__testimonial-description">
             <h5>It was effortless experience.</h5>
-            <Rating
-              name="simple-controlled"
-              value={5}
-              readOnly
-              // onChange={(event, newValue) => {
-              //   setValue(newValue);
-              // }}
-            />
-            <p>
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs. The passage is
-              attributed to an unknown typesetter in the 15th century who is
-              thought to have scrambled parts of Cicero’s De Finibus Bonorum et
-              Malorum for use in a type specimen book.
-            </p>
-            <p>
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs. The passage is
-              attributed to an unknown typesetter in the 15th century who is
-              thought to have scrambled parts of Cicero’s De Finibus Bonorum et
-              Malorum for use in a type specimen book.
-            </p>
-            <p>
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs.
-            </p>
+            <Rating name="simple-controlled" value={5} readOnly />
+            <div className="testimonial-wrapper__testimonial-description-text">
+              <p>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                used in laying out print, graphic or web designs. The passage is
+                attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero’s De Finibus Bonorum
+                et Malorum for use in a type specimen book.
+              </p>
+              <p>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                used in laying out print, graphic or web designs. The passage is
+                attributed to an unknown typesetter in the 15th century who is
+                thought to have scrambled parts of Cicero’s De Finibus Bonorum
+                et Malorum for use in a type specimen book.
+              </p>
+              <p>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                used in laying out print, graphic or web designs.
+              </p>
+            </div>
           </div>
         </div>
       </div>

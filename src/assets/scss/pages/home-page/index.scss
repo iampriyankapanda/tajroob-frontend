@@ -114,6 +114,10 @@
   height: 40px;
   width: 40px;
   cursor: pointer;
+  display: flex;
+}
+.slider-wrapper__control-btn img {
+  margin: auto;
 }
 
 .slider-wrapper__control-btn--margin {
@@ -199,6 +203,19 @@
   max-width: 532px;
   width: 100%;
 }
+.testimonial-wrapper__testimonial-description h5 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: $medium-font-weight;
+}
+.testimonial-wrapper__testimonial-description-text {
+  margin-top: 16px;
+}
+.testimonial-wrapper__testimonial-description-text p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #423f3f;
+}
 .testimonial-wrapper__testimonial-card-details {
   padding: 20px;
   border-radius: 8px;
@@ -220,7 +237,7 @@
   margin-right: 16px;
 }
 .testimonial-wrapper__testimonial-profile-name {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: $medium-font-weight;
   margin-bottom: 3px;
 }
@@ -232,7 +249,13 @@
 .share-experience-wrapper {
   max-width: 900px;
   width: 100%;
+  margin: 0 auto;
+}
+.share-experience-wrapper--border {
+  border: 1px solid red;
+  border-radius: 8px;
   margin: 0 auto 54px;
+  padding: 54px 0;
 }
 .share-experience-wrapper__details-title {
   font-size: 36px;
@@ -254,6 +277,54 @@
   width: 401px;
   height: 310px;
   object-fit: contain;
+}
+// weekend-card
+.card-container {
+  margin-bottom: 54px;
+  border-radius: 4px;
+  max-width: 355px;
+  width: 100%;
+  border: 1px solid $theme-border-color;
+}
+.card-container__details {
+  margin: 16px;
+  border-bottom: 1px solid $theme-border-color;
+  height: 120px;
+}
+.card-container__details h5 {
+  font-size: 22px;
+  font-weight: $medium-font-weight;
+}
+.card-container__details-text {
+  font-size: 10px;
+  color: green;
+  background-color: rgb(210, 243, 210);
+  border-radius: 50%;
+  padding: 10px;
+}
+.card-container__details__text {
+  margin-top: 8px;
+  font-size: 14px;
+}
+.card-container__banner-img {
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+.card-container__person-info {
+  margin: 16px;
+}
+.card-container__person-info-img {
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.card-container__person-info-details h6 {
+  color: #ee3869;
+  font-size: 16px;
+  font-weight: $normal-font-weight;
+}
+.card-container__person-info-details p {
+  font-size: 12px;
+  color: #5f6368;
 }
 //footer
 .footer-wrapper {

@@ -1,3 +1,6 @@
+import React from "react";
+import PlanForWeekendCard from "../../home-page/plan-weekend/weekend-card.js";
+
 import { useState, useEffect } from "react";
 
 import Swiper, { Navigation, Pagination } from "swiper";
@@ -7,14 +10,12 @@ import "swiper/swiper-bundle.min.css";
 // swiper core styles
 import "swiper/swiper.min.css";
 
-import TrendingCard from "./trending-card.js";
-
 //SwiperCore.use([Navigation]);
 
 Swiper.use([Navigation, Pagination]);
 
-export default function TrendingSlider() {
-  const [trendingExperienceArray] = useState([
+export default function PlanForWeekend() {
+  const [planArray] = useState([
     {
       imageurl: "/images/home-page/slider/trending-img-1.jpeg",
       experienceCount: "22",
@@ -28,39 +29,15 @@ export default function TrendingSlider() {
       text: "Unlock your potential",
     },
     {
-      imageurl: "/images/home-page/slider/music.jpeg",
-      experienceCount: "22",
-      title: "Music",
-      text: "Unlock your potential",
-    },
-    {
-      imageurl: "/images/home-page/slider/photography.jpeg",
-      experienceCount: "22",
-      title: "Photography",
-      text: "Unlock your potential",
-    },
-    {
-      imageurl: "/images/home-page/slider/trending-img-1.jpeg",
-      experienceCount: "22",
-      title: "Drinks",
-      text: "Unlock your potential",
-    },
-    {
       imageurl: "/images/home-page/slider/books.jpeg",
       experienceCount: "22",
-      title: "Drinks",
-      text: "Unlock your potential",
-    },
-    {
-      imageurl: "/images/home-page/slider/photography.jpeg",
-      experienceCount: "22",
-      title: "Drinks",
+      title: "Books",
       text: "Unlock your potential",
     },
   ]);
   const initializeSwiper = () => {
-    var trendingSlider = new Swiper(".trending-exp-swiper", {
-      slidesPerView: 5,
+    var trendingSlider = new Swiper(".plan-swiper", {
+      slidesPerView: 3,
       spaceBetween: 15,
 
       loop: false,
@@ -79,12 +56,12 @@ export default function TrendingSlider() {
     <>
       <div className="container">
         <div className="slider-wrapper__body">
-          <div className="swiper trending-exp-swiper">
+          <div className="swiper plan-swiper">
             <div className="swiper-wrapper">
-              {trendingExperienceArray.map((trendingObj, index) => {
+              {planArray.map((trendingObj, index) => {
                 return (
-                  <div className="swiper-slide" key={`trending${index}`}>
-                    <TrendingCard trendingExperiencePropObj={trendingObj} />
+                  <div className="swiper-slide" key={`plan${index}`}>
+                    <PlanForWeekendCard />
                   </div>
                 );
               })}

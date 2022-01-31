@@ -8,6 +8,7 @@ import Footer from "../../assets/components/home-page/footer/index.js";
 import Testimonial from "../../assets/components/home-page/testimonial/index.js";
 import TrendingProperties from "../../assets/components/home-page/trending-experience/index.js";
 import PopularSlider from "../../assets/components/home-page/most-popular/index.js";
+import PlanForWeekend from "../../assets/components/home-page/plan-weekend/weekend-slider.js";
 export default function HomePage() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function HomePage() {
       <Experiences />
       <Testimonial />
       <ShareExperience />
+      <PlanForWeekend />
       <Footer />
     </>
   );
