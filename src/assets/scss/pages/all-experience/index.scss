@@ -1,0 +1,56 @@
+@import "../../common/_variables.scss";
+@import "../../common/base";
+@import "../../common/extends";
+@import "../../common/normalize";
+
+.all-experience-wrapper {
+  margin: 54px 0 32px;
+}
+.all-experience-wrapper__header-title {
+  font-size: 34px;
+  font-weight: $medium-font-weight;
+  margin-right: 8px;
+}
+.all-experience-wrapper__header-text {
+  color: #5f6368;
+  font-size: 22px;
+  margin-bottom: 34px;
+}
+.all-experience-wrapper__navigation {
+  border-bottom: 1px solid $theme-border-color;
+  padding-bottom: 9px;
+}
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+.tabs > img {
+  border-radius: 4px;
+  width: 107px;
+}
+.all-experience-wrapper__navigation ul li {
+  display: inline-block;
+  margin-right: 24px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5ms ease-in-out;
+  &:hover {
+    color: $theme-primary-color;
+
+    &:after {
+      content: "";
+      position: absolute;
+
+      height: 2px;
+      background-color: $theme-primary-color;
+      bottom: -9px;
+      left: 0;
+      right: 0;
+    }
+  }
+}
+.margin-bottom-54 {
+  margin-bottom: 54px;
+}

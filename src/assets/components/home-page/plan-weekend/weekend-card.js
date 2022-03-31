@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function PlanForWeekendCard() {
+export default function PlanForWeekendCard(props) {
   return (
     <div className="card-container">
       <img
-        src="/images/home-page/slider/icon.jpeg"
+        src={props.planArrayObj.imageurl}
         className="img-fluid card-container__banner-img"
         alt=""
         height="177"
@@ -12,11 +12,13 @@ export default function PlanForWeekendCard() {
       />
       <div className="card-container__details">
         <div className="d-flex align-items-center justify-content-between">
-          <h5>From $ 100 / Person</h5>
-          <p className="card-container__details-text">4.6</p>
+          <h5>{props.planArrayObj.title}</h5>
+          <p className="card-container__details-text">
+            {props.planArrayObj.experienceCount}
+          </p>
         </div>
         <p className="card-container__details__text">
-          Ancient Secret Masala Ingredients for tasty non-veg Indian food
+          {props.planArrayObj.text}
         </p>
       </div>
       <div className="d-flex card-container__person-info align-items-center">
@@ -27,8 +29,8 @@ export default function PlanForWeekendCard() {
           className="img-fluid card-container__person-info-img"
         />
         <div className="card-container__person-info-details">
-          <h6>Hafisa Begum</h6>
-          <p>India</p>
+          <h6>{props.planArrayObj.name}</h6>
+          <p>{props.planArrayObj.location}</p>
         </div>
       </div>
     </div>

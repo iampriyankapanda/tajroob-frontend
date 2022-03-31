@@ -1,5 +1,6 @@
 export default function TrendingCard(props) {
   const trendingObj = props.trendingExperiencePropObj;
+  console.log(trendingObj);
   return (
     <div className="slider-wrapper__slider-item">
       <img
