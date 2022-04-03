@@ -49,9 +49,20 @@
   border-bottom: 1px solid $theme-primary-color;
 }
 //banner
+.main-banner-wrapper {
+  width: 100%;
+  height: calc(100vh - 69px);
+}
 .banner-wrapper {
-  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-bottom: 1px solid red;
+}
+.banner-image {
+  width: 100%;
+  position: relative;
 }
 .banner-wrapper__elements {
   margin: auto;
