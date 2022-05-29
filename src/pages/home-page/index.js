@@ -13,6 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Header />
+      <div></div>
       <Banner />
       <TrendingProperties />
       <PopularSlider />
